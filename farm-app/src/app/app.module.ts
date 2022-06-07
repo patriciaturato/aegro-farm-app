@@ -8,6 +8,9 @@ import { PlotsComponent } from './plots/plots.component';
 import { PlotListComponent } from './plots/plot-list/plot-list.component';
 import { ProductionsComponent } from './productions/productions.component';
 import { ProductionListComponent } from './productions/production-list/production-list.component';
+import { AddProductionComponent } from './productions/add-production/add-production.component';
+import { AddPlotComponent } from './plots/add-plot/add-plot.component';
+import { AddFarmComponent } from './farms/add-farm/add-farm.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { ProductionListComponent } from './productions/production-list/productio
     PlotsComponent,
     PlotListComponent,
     ProductionsComponent,
-    ProductionListComponent
+    ProductionListComponent,
+    AddProductionComponent,
+    AddPlotComponent,
+    AddFarmComponent
   ],
   imports: [
     BrowserModule

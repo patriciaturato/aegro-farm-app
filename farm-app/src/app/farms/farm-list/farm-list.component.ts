@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Farm } from '../farm.model';
 
 @Component({
   selector: 'app-farm-list',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./farm-list.component.css']
 })
 export class FarmListComponent implements OnInit {
+  farms: Farm[] = []
 
   constructor() { }
 

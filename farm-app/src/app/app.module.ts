@@ -11,6 +11,9 @@ import { ProductionListComponent } from './productions/production-list/productio
 import { AddProductionComponent } from './productions/add-production/add-production.component';
 import { AddPlotComponent } from './plots/add-plot/add-plot.component';
 import { AddFarmComponent } from './farms/add-farm/add-farm.component';
+import { DeleteFarmComponent } from './farms/delete-farm/delete-farm.component';
+import { DeletePlotComponent } from './plots/delete-plot/delete-plot.component';
+import { DeleteProductionComponent } from './productions/delete-production/delete-production.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { AddFarmComponent } from './farms/add-farm/add-farm.component';
     ProductionListComponent,
     AddProductionComponent,
     AddPlotComponent,
-    AddFarmComponent
+    AddFarmComponent,
+    DeleteFarmComponent,
+    DeletePlotComponent,
+    DeleteProductionComponent
   ],
   imports: [
     BrowserModule

@@ -99,5 +99,7 @@
       }
     }
   },
-  "defaultProject": "farm-app"
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { FarmsComponent } from './farms/farms.component';
@@ -32,7 +33,8 @@ import { DeleteProductionComponent } from './productions/delete-production/delet
     DeleteProductionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

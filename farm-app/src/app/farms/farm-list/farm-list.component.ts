@@ -7,7 +7,7 @@ import { Farm } from '../farm.model';
   styleUrls: ['./farm-list.component.css']
 })
 export class FarmListComponent implements OnInit {
-  farms: Farm[] = []
+  farms: Farm[] = [new Farm("Fazenda de Teste"), new Farm("Fazenda de Teste 2")]
 
   constructor() { }
 

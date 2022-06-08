@@ -15,6 +15,16 @@ import { AddFarmComponent } from './farms/add-farm/add-farm.component';
 import { DeleteFarmComponent } from './farms/delete-farm/delete-farm.component';
 import { DeletePlotComponent } from './plots/delete-plot/delete-plot.component';
 import { DeleteProductionComponent } from './productions/delete-production/delete-production.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes =[
+  { path: '', component: FarmsComponent},
+  { path: 'farm-list', component: FarmListComponent},
+  { path: 'plots', component: PlotsComponent},
+  { path: ':id/plot-list', component: PlotListComponent},
+  { path: 'productions', component: ProductionsComponent},
+  { path: ':id/production-list', component: ProductionListComponent},
+]
 
 @NgModule({
   declarations: [
@@ -34,7 +44,8 @@ import { DeleteProductionComponent } from './productions/delete-production/delet
   ],
   imports: [
     BrowserModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

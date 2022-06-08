@@ -1,7 +1,11 @@
 <div class="main-content">
     <div class="farms-header">
         <p class="main-title">Fazendas</p>
-        <button class="main-button"><mat-icon>add</mat-icon>Nova Fazenda</button>
+        <button 
+            mat-raised-button
+            class="main-button"
+            (click)="onAddFarmButton()">
+            <mat-icon>add</mat-icon> Nova Fazenda</button>
     </div>
     <div *ngIf="farms.length == 0" class="no-content">
         <h4>Não há fazendas registradas</h4>
@@ -19,5 +23,4 @@
         </table>
     </div>
 </div>
-
 

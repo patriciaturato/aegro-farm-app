@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatDialogModule } from '@angular/material/dialog'
 import { MatIconModule } from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+//import { MatButtonModule } from '@angular/material/button'
+import { MatFormFieldModule } from '@angular/material/form-field'
 
 import { AppComponent } from './app.component';
 import { FarmsComponent } from './farms/farms.component';
@@ -17,13 +22,15 @@ import { DeletePlotComponent } from './plots/delete-plot/delete-plot.component';
 import { DeleteProductionComponent } from './productions/delete-production/delete-production.component';
 import { RouterModule, Routes } from '@angular/router';
 
+
 const appRoutes: Routes =[
-  { path: '', component: FarmsComponent},
-  { path: 'farm-list', component: FarmListComponent},
-  { path: 'plots', component: PlotsComponent},
-  { path: ':id/plot-list', component: PlotListComponent},
-  { path: 'productions', component: ProductionsComponent},
-  { path: ':id/production-list', component: ProductionListComponent},
+  { path: '', component: FarmsComponent },
+  { path: 'farm-list', component: FarmListComponent },
+  { path: 'plots', component: PlotsComponent },
+  { path: ':id/plot-list', component: PlotListComponent },
+  { path: 'productions', component: ProductionsComponent },
+  { path: ':id/production-list', component: ProductionListComponent },
+  { path: 'add-farm', component: AddFarmComponent }
 ]
 
 @NgModule({
@@ -43,7 +50,11 @@ const appRoutes: Routes =[
     DeleteProductionComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
+    FormsModule,
+    MatDialogModule,
+    MatFormFieldModule,
     MatIconModule,
     RouterModule.forRoot(appRoutes)
   ],

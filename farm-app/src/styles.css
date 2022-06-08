@@ -112,3 +112,44 @@ body {
 .list-content tr:hover .ghost {
     visibility: visible;
 }
+
+.dialog-form {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.dialog-form input {
+    outline: 0;
+    width: 100%;
+    border-width: 0 0 2px;
+    border-color: #e0e0e0;
+    color: black;
+    font-size: 1.3em;
+    height: 2em;
+    margin-bottom: 2em;
+}
+
+.form-button {
+    justify-content: flex-end;
+    display: inline-flex;
+    width: 100%;
+}
+
+.cancel-button {
+    height:40px;
+    margin-right: 10px;
+    padding: 0 10px;
+    border-style: none;
+    border-radius: 2px;
+    color: #9c9c9c;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s all;
+}
+
+.cancel-button:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
